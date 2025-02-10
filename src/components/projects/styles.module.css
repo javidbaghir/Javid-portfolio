@@ -1,0 +1,98 @@
+/* .title {
+  @apply flex justify-center items-center py-[70px];
+}
+
+.container {
+  @apply py-[80px];
+}
+
+.cardContainer {
+  @apply grid grid-cols-2 gap-3 h-[500px] w-[1050px] rounded-[24px] overflow-hidden shadow-lg;
+}
+
+.allProjects {
+  @apply flex flex-col items-center justify-center gap-[80px];
+}
+
+.cardLeftSide {
+  @apply bg-white;
+}
+
+.cardTexts {
+  @apply flex flex-col items-center justify-center h-full space-y-[24px];
+}
+
+.cardTexts h3 {
+  @apply text-[40px] font-bold;
+}
+
+.cardTexts a {
+  @apply text-[18px] font-medium px-[24px] py-[8px] border border-[#25282B] rounded-full;
+}
+
+.cardTexts a:hover {
+  @apply text-[18px] font-medium px-[24px] py-[8px] border border-[#25282B] bg-[#25282B] text-white rounded-full;
+}
+
+.figure {
+  @apply size-full;
+}
+
+.figure img {
+  @apply size-full object-cover;
+} */
+
+.title {
+  @apply flex justify-center items-center py-[70px];
+}
+
+.container {
+  @apply py-[80px];
+}
+
+.allProjects {
+  @apply flex flex-col items-center justify-center gap-[80px];
+}
+
+.cardContainer {
+  @apply grid grid-cols-2 gap-3 h-[500px] w-full rounded-[24px] overflow-hidden shadow-lg;
+  display: grid;
+}
+
+.cardLeftSide {
+  @apply bg-white;
+  order: 0;
+}
+
+.cardRightSide {
+  @apply bg-white;
+  order: 1;
+}
+
+.cardTexts {
+  @apply flex flex-col items-center justify-center h-full space-y-[24px];
+}
+
+.cardTexts p {
+  @apply px-8;
+}
+
+.cardTexts h3 {
+  @apply text-[40px] font-bold;
+}
+
+.cardTexts a {
+  @apply text-[18px] font-medium px-[24px] py-[8px] border border-[#25282B] rounded-full;
+}
+
+.cardTexts a:hover {
+  @apply text-[18px] font-medium px-[24px] py-[8px] border border-[#25282B] bg-[#25282B] text-white rounded-full;
+}
+
+.figure {
+  @apply size-full;
+}
+
+.figure img {
+  @apply size-full object-contain;
+}

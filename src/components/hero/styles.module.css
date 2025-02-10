@@ -1,0 +1,48 @@
+/* .container {
+  @apply grid grid-cols-2 gap-[80px] items-center py-[55px];
+} */
+.container {
+  @apply flex gap-[80px] items-center py-[55px];
+}
+
+.leftSide {
+  @apply space-y-[32px];
+}
+
+.text p:nth-child(1) {
+  @apply text-[24px] text-[#FDC435] font-bold;
+}
+.text p:nth-child(2) {
+  @apply text-[64px] font-bold;
+}
+
+.text p:nth-child(3) {
+  @apply text-[24px] leading-[36px] text-[#FDC435];
+}
+
+.rightSide {
+  @apply rounded-full size-[400px] overflow-hidden flex justify-end items-end border-4 border-[#fdc435];
+}
+
+.rightSide img {
+  @apply size-full object-cover;
+}
+
+.button {
+  @apply flex items-center gap-[12px];
+}
+
+.projectBtn {
+  @apply px-[24px] bg-[#FDC435] border-2 border-[#fdc435] text-[18px] rounded-[8px] py-[8px];
+}
+
+.projectBtn:hover {
+  @apply px-[24px] bg-[#f9faff] border-2 border-[#fdc435] text-[18px] rounded-[8px] py-[8px];
+}
+
+.linkedinBtn {
+  @apply px-[24px] border-2 border-[#25282B] text-[18px] rounded-[8px] py-[8px];
+}
+.linkedinBtn:hover {
+  @apply px-[24px] border-2 border-[#FDC435] text-[18px] rounded-[8px] py-[8px];
+}

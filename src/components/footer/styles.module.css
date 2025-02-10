@@ -1,0 +1,11 @@
+.container {
+  @apply flex flex-col items-center justify-center;
+}
+
+.container p {
+  @apply text-[16px] text-[#828282] mt-[32px];
+}
+
+.icons {
+  @apply flex items-center gap-[24px];
+}

@@ -1,0 +1,9 @@
+.containerr {
+  @apply container mx-auto min-h-screen;
+
+  min-height: calc(100vh - 422px);
+}
+
+.outlet {
+  @apply flex-1 container mx-auto;
+}

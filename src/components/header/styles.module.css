@@ -1,0 +1,24 @@
+.container {
+  @apply flex items-center justify-between py-[14px];
+}
+
+.nav {
+  @apply flex items-center gap-[48px];
+}
+
+.nav a:hover {
+  @apply text-[#FDC435];
+}
+
+.logo {
+  @apply text-[18px] font-bold;
+}
+
+.isActive {
+  @apply text-[#FDC435];
+}
+
+select {
+  background: transparent;
+  color: inherit;
+}
