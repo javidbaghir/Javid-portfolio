@@ -17,5 +17,8 @@
     "frontTech": "Frontend Technologies: ",
     "versionCtrl": "Version Control",
     "other": "Other: UI Design and Component Creation, API Integration"
+  },
+  "project": {
+    "button": "View project"
   }
 }

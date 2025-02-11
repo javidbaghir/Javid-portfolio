@@ -17,5 +17,8 @@
     "frontTech": "Frontend Texnologiyaları:",
     "versionCtrl": "Versiya Nəzarəti",
     "other": "Digər: UI Dizayn və Komponent Yaratma, API İnterqrasiyası"
+  },
+  "project": {
+    "button": "Proyektə bax"
   }
 }
