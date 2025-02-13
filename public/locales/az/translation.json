@@ -20,5 +20,9 @@
   },
   "project": {
     "button": "Proyektə bax"
+  },
+  "notFound": {
+    "message": "Səhifə tapılmadı",
+    "btn": "Ana Səhifəyə qayıt"
   }
 }

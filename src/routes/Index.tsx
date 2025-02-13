@@ -3,6 +3,7 @@ import MainLayout from "../components/layout/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ContactUs from "../pages/ContactUs";
+import NotFound from "../pages/NotFoundPage";
 
 
 const routes: RouteObject[] = [
@@ -22,10 +23,10 @@ const routes: RouteObject[] = [
           path: "contact-us",
           element: <ContactUs />,
         },
-      //   {
-      //     path: "*",
-      //     element: <NotFound />,
-      //   },
+        {
+          path: "*",
+          element: <NotFound />,
+        },
     ],
   },
 ];

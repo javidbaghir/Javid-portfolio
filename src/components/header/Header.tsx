@@ -20,7 +20,6 @@ const Header = () => {
         <div className={styles.container}>
             <Link to="/" className={styles.logo}>{t("header.name")}</Link>
 
-            {/* Main Navigation */}
             <nav className={styles.nav}>
                 <NavLink className={({ isActive }) => (isActive ? styles.isActive : "")} to="/">
                     {t("header.home")}
@@ -36,18 +35,15 @@ const Header = () => {
                 </NavLink>
             </nav>
 
-            {/* Language Select */}
             <select name="lang" id="lang" onChange={handleLanguageChange} className="hidden md:block">
                 <option value="en">English</option>
                 <option value="az">Azərbaycan</option>
             </select>
 
-            {/* Burger Menu Button */}
             <button onClick={toggleMenu} className="block md:hidden">
                 {menuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
 
-            {/* Mobile Menu */}
             {menuOpen && (
                 <div className="fixed top-0 right-0 h-[100vh] w-[70%] bg-white text-black z-50 p-8 md:hidden transition-transform duration-500">
                     <button onClick={toggleMenu} className="absolute top-4 right-4">

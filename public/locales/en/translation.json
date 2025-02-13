@@ -20,5 +20,9 @@
   },
   "project": {
     "button": "View project"
+  },
+  "notFound": {
+    "message": "Oops, This Page Not Found!",
+    "btn": "Go Back Home"
   }
 }
