@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { handleLinkClick } from "../../utils/util";
 import styles from "./styles.module.css";
-import { Menu, X } from "lucide-react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Header = () => {
+    const themeContext = useContext(ThemeContext);
+
+    if (!themeContext) {
+        throw new Error("ThemeContext must be used within a ThemeProvider");
+    }
+
+    const { darkMode, setDarkMode } = themeContext;
     const { t, i18n } = useTranslation();
     const navigate = useNavigate();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -35,11 +43,20 @@ const Header = () => {
                 </NavLink>
             </nav>
 
-            <select name="lang" id="lang" onChange={handleLanguageChange} className="hidden md:block">
-                <option value="en">English</option>
-                <option value="az">Azərbaycan</option>
-            </select>
+            <div className="flex items-center gap-2">
+                <select name="lang" id="lang" onChange={handleLanguageChange} className="hidden md:block">
+                    <option value="en">English</option>
+                    <option value="az">Azərbaycan</option>
+                </select>
 
+                <button
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="p-2 rounded"
+                >
+                    {darkMode ? <Sun size={24} /> : <Moon size={24} />}
+                </button>
+
+            </div>
             <button onClick={toggleMenu} className="block md:hidden">
                 {menuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
