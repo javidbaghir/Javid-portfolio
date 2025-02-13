@@ -9,7 +9,7 @@
   "hero": {
     "jobTitle": "Front-end Developer",
     "greeting": "Hello! My name is Javid",
-    "desc": "I am a Frontend Developer creating creative and user-friendly web applications. I place great importance on clean code and aesthetic interfaces. You can find more detailed information about me in the 'About Me' section."
+    "desc": "I am a Frontend Developer creating creative and user-friendly web applications. I place great importance on clean code and aesthetic interfaces. You can find more information in the 'About Me' section."
   },
   "about": {
     "desc": "I am Javid, an enthusiastic and creative frontend developer. I have experience with technologies such as HTML, CSS, JavaScript, and React. I focus on enhancing user experience by balancing the aesthetic and functional aspects of web applications. Alongside programming, continuously learning new technologies and improving my skills is a priority for me.",
