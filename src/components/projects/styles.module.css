@@ -11,17 +11,15 @@
 }
 
 .cardContainer {
-  @apply flex flex-col md:grid md:grid-cols-2 gap-3 h-auto md:h-[500px] w-full rounded-[24px] overflow-hidden shadow-lg py-4 md:py-0;
+  @apply flex flex-col md:grid md:grid-cols-2 gap-3 min-h-[400px] md:h-[500px] w-full rounded-[24px] overflow-hidden shadow-lg py-4 md:py-0;
 }
 
 .cardLeftSide {
-  @apply bg-white  py-4 md:py-0;
-  order: 0;
+  @apply bg-white py-4 md:py-0;
 }
 
 .cardRightSide {
-  @apply bg-white;
-  order: 1;
+  @apply bg-white md:order-2;
 }
 
 .cardTexts {
@@ -33,7 +31,7 @@
 }
 
 .cardTexts h3 {
-  @apply text-[28px] md:text-[40px] font-bold;
+  @apply text-[28px] md:text-[40px] font-bold mt-4 md:mt-0;
 }
 
 .cardTexts a {
