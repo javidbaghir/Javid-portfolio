@@ -22,3 +22,14 @@ select {
   background: transparent;
   color: inherit;
 }
+.menu {
+  max-height: 0; /* Menyu başlanğıcda gizlidir */
+  overflow: hidden; /* İçəriyə çıxan elementlər gizlənir */
+  transition: max-height 0.5s ease-out; /* Açılanda smooth animasiya */
+}
+
+/* Menyu açıldıqda */
+.menu-open {
+  max-height: 100vh; /* Yaxud menu'nun hündürlüyünə uyğun dəyər */
+  transition: max-height 0.5s ease-in;
+}

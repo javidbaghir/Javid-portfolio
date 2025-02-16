@@ -51,7 +51,7 @@ const Header = () => {
 
                 <button
                     onClick={() => setDarkMode(!darkMode)}
-                    className="p-2 rounded"
+                    className="p-2 rounded hidden md:block"
                 >
                     {darkMode ? <Sun size={24} /> : <Moon size={24} />}
                 </button>
@@ -62,11 +62,19 @@ const Header = () => {
             </button>
 
             {menuOpen && (
-                <div className="fixed top-0 right-0 h-[100vh] w-[70%] bg-white text-black z-50 p-8 md:hidden transition-transform duration-500">
+                <div className={`fixed top-0 right-0 h-[100vh] w-[70%] bg-white dark:text-white text-black z-50 p-8 md:hidden transition-transform duration-500 ${menuOpen ? 'menu-open' : ''}`}>
                     <button onClick={toggleMenu} className="absolute top-4 right-4">
                         <X size={32} />
                     </button>
                     <ul className="mt-8 space-y-6">
+                        <li>
+                            <button
+                                onClick={() => setDarkMode(!darkMode)}
+                                className="p-2 rounded "
+                            >
+                                {darkMode ? <Sun size={24} /> : <Moon size={24} />}
+                            </button>
+                        </li>
                         <li>
                             <NavLink to="/" onClick={toggleMenu} className={({ isActive }) => (isActive ? styles.isActive : "")} >{t("header.home")}</NavLink>
                         </li>
